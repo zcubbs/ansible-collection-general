@@ -1,0 +1,39 @@
+---
+
+- name: add universe repository for bionic
+  apt_repository:
+    repo: deb http://archive.ubuntu.com/ubuntu bionic universe
+    state: present
+  when: ansible_distribution_release == 'bionic'
+
+- name: add universe repository for focal
+  apt_repository:
+    repo: deb http://archive.ubuntu.com/ubuntu focal universe
+    state: present
+  when: ansible_distribution_release == 'focal'
+
+- name: update apt repository
+  apt:
+    update_cache: true
+    upgrade: full
+    cache_valid_time: 3600
+  when: ansible_os_family == 'Debian'
+
+- name: Ensure Pip is installed.
+  package:
+    name: "{{ pip_package }}"
+    state: present
+
+- name: Ensure python3-setuptools is installed.
+  package:
+    name: "python3-setuptools"
+    state: present
+
+- name: Ensure pip_install_packages are installed.
+  pip:
+    name: "{{ item.name | default(item) }}"
+    version: "{{ item.version | default(omit) }}"
+    virtualenv: "{{ item.virtualenv | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+    executable: "{{ pip_executable }}"
+  with_items: "{{ pip_install_packages }}"

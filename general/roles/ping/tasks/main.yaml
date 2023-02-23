@@ -1,0 +1,6 @@
+---
+- name: "Pause for {{ pause_min }} minutes"
+  pause:
+    minutes: "{{ pause_min }}"
+- name: Performing ping ...
+  ping:

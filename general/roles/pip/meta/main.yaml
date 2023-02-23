@@ -1,0 +1,33 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: zakaria.elbouwab
+  description: ansible roles.
+  company: "-"
+  license: "-"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - gru
+    - mrc
+    - system
+    - packaging
+    - development
+    - cloud
+    - python
+    - docker
+    - ansible
+    - automation
