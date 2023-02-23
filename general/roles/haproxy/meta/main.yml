@@ -3,10 +3,10 @@ dependencies: []
 
 galaxy_info:
   role_name: haproxy
-  author: geerlingguy
+  author: zcubbs
   description: HAProxy installation and configuration.
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  company: "https://github.com/zcubbs"
+  license: "MIT"
   min_ansible_version: 2.2
   platforms:
     - name: EL

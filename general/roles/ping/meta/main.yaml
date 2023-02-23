@@ -2,10 +2,10 @@
 dependencies: []
 
 galaxy_info:
-  author: zakaria.elbouwab
+  author: zcubbs
   description: ansible roles.
-  company: "-"
-  license: "-"
+  company: "https://github.com/zcubbs"
+  license: "MIT"
   min_ansible_version: 2.4
   platforms:
     - name: EL

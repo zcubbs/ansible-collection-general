@@ -1,18 +1,18 @@
-namespace: mrc
-name: zcubbs_docker
+namespace: zcubbs
+name: general
 version: 1.0.0
 readme: README.md
 authors:
 - zcubbs <https://github.com/zcubbs>
-description: Docker collection
+description: General collection
 license:
 - MIT
 license_file: ''
 tags: []
 dependencies: {}
-repository: https://github.com/zcubbs/ansible-collection-docker
-documentation: https://github.com/zcubbs/ansible-collection-docker
-homepage: https://github.com/zcubbs/ansible-collection-docker
-issues: https://github.com/zcubbs/ansible-collection-docker
+repository: https://github.com/zcubbs/ansible-collection-general
+documentation: https://github.com/zcubbs/ansible-collection-general
+homepage: https://github.com/zcubbs/ansible-collection-general
+issues: https://github.com/zcubbs/ansible-collection-general
 build_ignore: []
 
