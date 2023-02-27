@@ -21,8 +21,6 @@ galaxy_info:
       versions:
         - all
   galaxy_tags:
-    - gru
-    - mrc
     - system
     - packaging
     - development

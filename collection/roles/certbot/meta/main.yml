@@ -7,7 +7,7 @@ galaxy_info:
   description: "Installs and configures Certbot (for Let's Encrypt)."
   company: "https://github.com/zcubbs"
   license: "MIT"
-  min_ansible_version: 2.4
+  min_ansible_version: '2.9'
   platforms:
     - name: EL
       versions:
