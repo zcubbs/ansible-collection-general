@@ -33,8 +33,8 @@ defaults
     timeout http-request    10s
     timeout queue           1m
     timeout connect         10s
-    timeout client          1m
-    timeout server          1m
+    timeout client          10m
+    timeout server          10m
     timeout http-keep-alive 10s
     timeout check           10s
     maxconn                 3000
@@ -97,6 +97,7 @@ backend {{ backend.name }}
     http-request deny if !is-whitelisted-ip
     option forwardfor
     option tcp-check
+    option http-keep-alive
     reqadd X-Forwarded-Proto:\ https
     redirect scheme https if !{ ssl_fc }
     {% for server in backend.servers %}
