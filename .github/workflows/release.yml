@@ -91,7 +91,7 @@ jobs:
             ```yaml
             ---
             collections:
-                - https://github.com/zcubbs/ansible-collections/releases/download/v${{ steps.cversion.outputs.version }}/zcubbs-general-${{ steps.cversion.outputs.version }}.tar.gz
+                - https://github.com/zcubbs/ansible-collections/releases/download/general-v${{ steps.cversion.outputs.version }}/zcubbs-general-${{ steps.cversion.outputs.version }}.tar.gz
             ```
           draft: false
           prerelease: false
